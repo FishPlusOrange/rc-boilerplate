@@ -1,0 +1,17 @@
+# dependencies
+node_modules
+
+# dev
+local
+build
+dist
+
+# test
+coverage
+
+# log
+*.log*
+
+# misc
+.DS_Store
+.vscode
