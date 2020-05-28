@@ -1,6 +1,8 @@
-// vars
-@import './vars/colors';
-@import './vars/font';
+// common
+@import './colors';
+@import './font';
+@import './mixins';
+@import './fns';
 
 // components
 @import '../components/test/style';
