@@ -1,14 +1,22 @@
 {
+  "root": true,
   "env": {
-    "browser": true
+    "browser": true,
+    "es6": true
   },
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
     "sourceType": "module"
   },
-  "plugins": ["prettier", "@typescript-eslint", "react"],
-  "extends": ["prettier", "prettier/@typescript-eslint", "prettier/react"],
+  "extends": ["eslint:recommended", "plugin:react/recommended", "prettier"],
+  "plugins": ["react-hooks", "@typescript-eslint", "prettier"],
   "rules": {
-    "prettier/prettier": "error"
+    "prettier/prettier": "error",
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn",
+    "react/prop-types": "off",
+    "no-unused-expressions": "off",
+    "@typescript-eslint/no-unused-expressions": "error",
+    "@typescript-eslint/no-unused-vars": ["error", { "args": "none" }]
   }
 }
