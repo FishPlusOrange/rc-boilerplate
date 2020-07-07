@@ -4,12 +4,15 @@ node_js:
 cache:
   directories:
     - node_modules
-install:
-  - make
-script:
-  - make build
 env:
   - CI=true
 branches:
   only:
     - master
+install:
+  - make
+before_script:
+  - make test
+  - bash <(curl -s https://codecov.io/bash)
+script:
+  - make build

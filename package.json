@@ -18,7 +18,7 @@
     "build": "yarn clean && yarn build:ts && yarn build:sass",
     "build:ts": "tsc",
     "build:sass": "node-sass src/styles/index.scss dist/index.css",
-    "test": "jest",
+    "test": "jest --coverage",
     "clean": "rimraf dist",
     "lint": "eslint --ext ts,tsx src",
     "prettier": "prettier --write src",

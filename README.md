@@ -1,6 +1,7 @@
 # RC Boilerplate
 
 [![Build Status](https://www.travis-ci.org/FishPlusOrange/rc-boilerplate.svg?branch=master)](https://www.travis-ci.org/FishPlusOrange/rc-boilerplate)
+![Codecov branch](https://img.shields.io/codecov/c/github/FishPlusOrange/rc-boilerplate/master)
 ![npm (scoped)](https://img.shields.io/npm/v/@fishplusorange/rc-boilerplate)
 ![GitHub](https://img.shields.io/github/license/FishPlusOrange/rc-boilerplate)
 
@@ -20,6 +21,9 @@ make doc
 
 # use with npm link for development
 make dev
+
+# test
+make test
 
 # build
 make build
