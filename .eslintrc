@@ -18,6 +18,7 @@
     "react-hooks/exhaustive-deps": "warn",
     "react/prop-types": "off",
     "no-unused-expressions": "off",
-    "@typescript-eslint/no-unused-vars": ["error", { "args": "none" }]
+    "no-unused-vars": "off",
+    "@typescript-eslint/no-unused-vars": "error"
   }
 }
